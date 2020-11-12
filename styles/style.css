@@ -13,6 +13,83 @@
   list-style: none;
 }
 
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 28px 15px 24px;
+}
+
+header h3 {
+  color: #e60023;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul li {
+  padding: 16px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #111;
+  font-weight: 700;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+header nav .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 24px;
+}
+
+header nav .buttons button {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 11px 12px;
+  border-radius: 24px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav .buttons .login {
+  color: #fff;
+  background: #e60023;
+}
+
+header nav .buttons .signup {
+  margin-left: 16px;
+  background: #efefef;
+}
+
 .heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,6 +112,19 @@
 
 .heading .wrapper {
   position: relative;
+}
+
+.heading .wrapper .offset {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.heading .wrapper .text {
+  white-space: nowrap;
+  color: #e60023;
 }
 
 .grid-container {
